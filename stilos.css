@@ -1,0 +1,36 @@
+/*#cuadros {
+    overflow:hidden;
+}*/
+body{
+	background-color:#d1d5d4;
+
+}
+
+div{
+	display: block;
+	float: left;
+	align-content: center;
+}
+ #damas{
+	width: 800px;
+	height: 600px;
+	margin-left: 250px;
+	
+}
+ #damas div div{
+    width: 100px;
+	height: 100px;
+}
+ #damas div:nth-child(odd) div:nth-child(odd){
+	background-color: white;
+}
+#damas div:nth-child(odd) div:nth-child(even){
+	background-color: black;
+}
+#damas div:nth-child(even) div:nth-child(odd){
+	background-color: black;
+}
+#damas div:nth-child(even) div:nth-child(even){
+	background-color: white;
+}
+

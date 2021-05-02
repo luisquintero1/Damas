@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>DAMAS</title>
+	<link type="text/css"  href="stilos.css" rel="stylesheet" media="all">
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://unpkg.com/dragula@3.7.3/dragula.js"></script>
+
+</head>
+
+<body >
+	<div id="damas">
+		<div>
+			<div id="vacio1"></div>
+			<div><img id="draggable1" src="damaazul.png" width="100" height="100" ></div>
+			<div id="vacio2"></div>
+			<div><img id="draggable2" src="damaazul.png" width="100" height="100" ></div>
+			<div id="vacio3"></div>
+			<div><img id="draggable3" src="damaazul.png" width="100" height="100" ></div>
+			<div id="vacio4"></div>
+			<div><img id="draggable4" src="damaazul.png" width="100" height="100" ></div>
+		</div>
+		 <div>
+			<div><img id="draggable5" src="damaazul.png" width="100" height="100" ></div>
+			<div id="vacio5"></div>
+			<div><img id="draggable6" src="damaazul.png" width="100" height="100" ></div>
+			<div id="vacio6"></div>
+			<div ><img id="draggable7" src="damaazul.png" width="100" height="100" ></div>
+			<div id="vacio7"></div>
+			<div ><img id="draggable8" src="damaazul.png" width="100" height="90" ></div>
+			<div id="vacio8"></div>
+		 </div>
+		 <div>
+			<div id="vacio9"></div>
+			<div><img id="draggable9" src="damaazul.png" width="100" height="100" ></div>
+			<div id="vacio10"></div>
+			<div><img id="draggable10" src="damaazul.png" width="100" height="100" ></div>
+			<div id="vacio11"></div>
+			<div><img id="draggable11" src="damaazul.png" width="100" height="100" ></div>
+			<div id="vacio12"></div>
+			<div><img id="draggable12" src="damaazul.png" width="100" height="100" ></div>
+		</div>
+		<div>
+			<div></div>
+			<div id="vacio13"></div>
+			<div></div>
+			<div id="vacio14"></div>
+			<div></div>
+			<div id="vacio15"></div>
+			<div></div>
+			<div id="vacio16"></div>
+		</div>
+		<div>
+			<div id="vacio17"></div>
+			<div></div>
+			<div id="vacio18"></div>
+			<div></div>
+			<div id="vacio19"></div>
+			<div></div>
+			<div id="vacio20"></div>
+			<div></div>
+		</div>
+		<div>
+			<div><img id="draggable13" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio21"></div>
+			<div><img id="draggable14" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio22"></div>
+			<div><img id="draggable15" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio23"></div>
+			<div><img id="draggable16" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio24"></div>
+		</div>
+		<div>
+			<div id="vacio25"></div>
+			<div><img id="draggable17" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio26"></div>
+			<div><img id="draggable18" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio27"></div>
+			<div><img id="draggable19" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio28"></div>
+			<div><img id="draggable20" src="damaroja.png" width="100" height="100" ></div>
+		</div>
+		<div>
+			<div><img id="draggable21" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio29"></div>
+			<div><img id="draggable22" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio30"></div>
+			<div><img id="draggable23" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio31"></div>
+			<div><img id="draggable24" src="damaroja.png" width="100" height="100" ></div>
+			<div id="vacio32"></div>
+		</div>
+	</div>
+
+ <!-- DESPALZAMIENDO DE LAS IMAGENES SOBRE LOS CUADROS NEGROS -->
+ <script>
+ 	dracula([document.getElementById('#draggable13,#draggable14,#draggable15,#draggable16,#draggable17,#draggable18,#draggable19,#draggable20,#draggable21,#draggable22,#draggable23,#draggable24')],{
+ 		removeOnSpill:true;
+ 	})
+  $( function() {
+    $( '#draggable1,#draggable2,#draggable3,#draggable4,#draggable5,#draggable6,#draggable7,#draggable8,#draggable9,#draggable10,#draggable11,#draggable12,#draggable13,#draggable14,#draggable15,#draggable16,#draggable17,#draggable18,#draggable19,#draggable20,#draggable21,#draggable22,#draggable23,#draggable24')removeChild().draggable();
+  });
+  </script>
+
+  <!-- RESTRINCION DE MOVIMIENTO EN CUADROS BLANCOS-->
+
+  <script>
+  	 $(document).ready(function(){
+     var shouldCancel = false;
+     $('#draggable1,#draggable2,#draggable3,#draggable4,#draggable5,#draggable6,#draggable7,#draggable8,#draggable9,#draggable10,#draggable11,#draggable12,#draggable13,#draggable14,#draggable15,#draggable16,#draggable17,#draggable18,#draggable19,#draggable20,#draggable21,#draggable22,#draggable23,#draggable24').draggable({
+        containment: '#damas',
+        revert: function(){
+            if (shouldCancel) {
+                shouldCancel = false;
+                return true;
+            } else {
+                return false;
+            }
+        }
+     });
+     $('#vacio1,#vacio2,#vacio3,#vacio4,#vacio5,#vacio6,#vacio7,#vacio8,#vacio9,#vacio10,#vacio11,#vacio12,#vacio13,#vacio14,#vacio15,#vacio16,#vacio17,#vacio18,#vacio19,#vacio20,#vacio21,#vacio22,#vacio23,#vacio24,#vacio25,#vacio26,#vacio27,#vacio28,#vacio29,#vacio30,#vacio31,#vacio32').droppable({
+        over: function(){
+            shouldCancel = true;
+        },
+        out: function(){
+            shouldCancel = false;
+        }
+        });
+    });
+  </script>
+
+  <!-- ALTERNACIA DE LOS TURNOS -->
+<script >
+	
+
+</script>
+  <!-- EN PROCESO AUN 😅😅😅 --->
+
+</body>
+</html>
